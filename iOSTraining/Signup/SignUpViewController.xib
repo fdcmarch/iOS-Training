@@ -10,8 +10,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SignUpViewController" customModule="iOSTraining" customModuleProvider="target">
             <connections>
-                <outlet property="signInBtn" destination="enT-HQ-2Gh" id="SVE-Pr-njU"/>
-                <outlet property="signUpBtn" destination="enT-HQ-2Gh" id="Cdh-Xf-RyG"/>
+                <outlet property="signInButtonDesign" destination="enT-HQ-2Gh" id="SMu-sk-zxO"/>
+                <outlet property="signUpButtonDesign" destination="pNP-5P-1dU" id="yTA-Hq-nbh"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -46,14 +46,14 @@
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" red="0.80803912879999995" green="0.76998466249999997" blue="0.85557395219999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <textInputTraits key="textInputTraits"/>
+                    <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                 </textField>
                 <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Confirm Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fU6-H0-Txg">
                     <rect key="frame" x="34" y="402" width="289" height="34"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" red="0.80803912879999995" green="0.76998466249999997" blue="0.85557395219999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <textInputTraits key="textInputTraits"/>
+                    <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                 </textField>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aua-Kw-Hmo">
                     <rect key="frame" x="37" y="446" width="21" height="21"/>
@@ -137,7 +137,14 @@
                     <color key="tintColor" systemColor="labelColor"/>
                     <state key="normal" title="Button"/>
                     <buttonConfiguration key="configuration" style="plain" title="Sign In"/>
+                    <connections>
+                        <action selector="didTapSignInButton:" destination="-1" eventType="touchUpInside" id="qKk-8O-YEP"/>
+                    </connections>
                 </button>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="register" translatesAutoresizingMaskIntoConstraints="NO" id="NxS-BE-mLV">
+                    <rect key="frame" x="76" y="59" width="240" height="128"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -149,6 +156,7 @@
         <image name="checked" width="48" height="48"/>
         <image name="facebook" width="32" height="32"/>
         <image name="google" width="32" height="32"/>
+        <image name="register" width="696" height="560"/>
         <image name="unchecked" width="48" height="48"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

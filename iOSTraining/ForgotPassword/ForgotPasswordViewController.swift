@@ -11,7 +11,7 @@ class ForgotPasswordViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        title = "Forgot Password"
         // Do any additional setup after loading the view.
     }
 
@@ -25,5 +25,8 @@ class ForgotPasswordViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
+    @IBAction func tapBackIcon(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
 }

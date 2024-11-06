@@ -9,13 +9,14 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    @IBOutlet weak var signupBtn: UIButton!
+    @IBOutlet weak var signUpBtn: UIButton!
     @IBOutlet weak var signInBtn: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-        signupBtn.layer.cornerRadius = 12
-        signupBtn.layer.borderWidth = 1
-        signupBtn.layer.borderColor = UIColor.purple.cgColor
+        title = "Login"
+        signUpBtn.layer.cornerRadius = 12
+        signUpBtn.layer.borderWidth = 1
+        signUpBtn.layer.borderColor = UIColor.purple.cgColor
         signInBtn.layer.cornerRadius = 12
     }
 
@@ -28,15 +29,24 @@ class ViewController: UIViewController {
     }
     
     
-    @IBAction func didTapSignupButton(_ sender: Any) {
-        print("Sign Up button was tapped.")
+    @IBAction func didTapForgotPwd(_ sender: Any) {
+        let forgotPassVC = ForgotPasswordViewController()
+        self.navigationController?.pushViewController(forgotPassVC, animated: true)
+    }
+    @IBAction func didTapSignUp(_ sender: Any) {
         // Initialize SignUpViewController from its XIB file
-            let signupVC = SignUpViewController(nibName: "SignUpViewController", bundle: nil)
-            
-            // Present the SignUpViewController modally
-            signupVC.modalPresentationStyle = .fullScreen // Optional: Makes it cover the entire screen
-            self.present(signupVC, animated: true, completion: nil)
+//            let signUpVC = SignUpViewController(nibName: "SignUpViewController", bundle: nil)
+//             
+//            // Present the SignUpViewController modally
+//        signUpVC.modalPresentationStyle = .fullScreen // Optional: Makes it cover the entire screen
+        let signUpVC = SignUpViewController()
+        let nav = UINavigationController(rootViewController: signUpVC)
+        self.present(nav, animated: true, completion: nil)
     }
     
+    @IBAction func didTapSubmitButton(_ sender: Any) {
+        let homeVC = HomeViewController()
+        self.navigationController?.pushViewController(homeVC, animated: true)
+    }
 }
 

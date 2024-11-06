@@ -9,9 +9,13 @@ import UIKit
 
 class PhotoCell: UICollectionViewCell {
 
+    @IBOutlet weak var photoSectionLabel: UILabel!
+    @IBOutlet weak var photoImageView: UIImageView!
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        photoSectionLabel.isHidden = true
+        photoImageView.layer.cornerRadius = 12
+        photoImageView.layer.masksToBounds = true
     }
 
 }

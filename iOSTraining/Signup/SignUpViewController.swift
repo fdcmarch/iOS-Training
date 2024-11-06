@@ -8,29 +8,25 @@
 import UIKit
 
 class SignUpViewController: UIViewController {
-    @IBOutlet weak var signUpBtn: UIButton!
     
-    @IBOutlet weak var signInBtn: UIButton!
+    @IBOutlet weak var signUpButtonDesign: UIButton!
+    @IBOutlet weak var signInButtonDesign: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        signUpBtn.layer.cornerRadius = 12
-        signInBtn.layer.cornerRadius = 12
-        signInBtn.layer.borderWidth = 1
-        signInBtn.layer.borderColor = UIColor.purple.cgColor
-    }
-
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+        title = "Sign Up"
+        signInButtonDesign.layer.cornerRadius = 12
+        signInButtonDesign.layer.borderWidth = 1
+        signInButtonDesign.layer.borderColor = UIColor.purple.cgColor
+        signUpButtonDesign.layer.cornerRadius = 12
+        
+        let closeButton = UIBarButtonItem(image: UIImage(systemName: "xmark"),
+            style: .plain,
+            target: self,
+            action: #selector(didTapCloseButton)
+        )
+        self.navigationItem.rightBarButtonItem = closeButton
+        
+}
     
     @IBAction func didTappedPrivacy(_ sender: UIButton) {
         if sender.isSelected {
@@ -38,5 +34,14 @@ class SignUpViewController: UIViewController {
         } else {
             sender.isSelected = true
         }
+    }
+    @IBAction func didTapSignInButton(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    @IBAction func didTapBackIconToSignin(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    @objc private func didTapCloseButton(){
+        self.dismiss(animated: true, completion: nil)
     }
 }
