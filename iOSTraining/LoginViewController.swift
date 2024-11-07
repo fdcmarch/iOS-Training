@@ -45,8 +45,8 @@ class ViewController: UIViewController {
     }
     
     @IBAction func didTapSubmitButton(_ sender: Any) {
-        let homeVC = HomeViewController()
-        self.navigationController?.pushViewController(homeVC, animated: true)
+        UserDefaults.standard.set(true, forKey: "is_login")
+        SceneDelegate.showDashboard()
     }
 }
 

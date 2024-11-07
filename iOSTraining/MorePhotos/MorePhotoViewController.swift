@@ -11,10 +11,9 @@ class MorePhotoViewController: UIViewController {
     var teacher: Teacher?
     @IBOutlet weak var collectionView: UICollectionView!
     
-//    private let photos = [
-//        "panda","panda","panda","panda","panda","panda"
-//    ]
-    private var photos: [String] = []
+    private var section1Photos = ["panda", "taylor", "chung", "maja", "taylor", "panda"]
+    private var section2Photos = ["sjw", "mikha", "taylor", "chung", "panda", "taylor", "chung", "maja", "sjw", "mikha", "taylor", "chung"]
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,40 +21,33 @@ class MorePhotoViewController: UIViewController {
        let nib = UINib(nibName: "PhotoCell", bundle: nil)
         collectionView.register(nib, forCellWithReuseIdentifier: "PhotoCell")
         
-        if let teacher = teacher {
-            photos = teacher.imageGallery
-        }
     }
 }
 
 extension MorePhotoViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout{
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return photos.count
+        return section == 0 ? section1Photos.count : section2Photos.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "PhotoCell", for: indexPath) as? PhotoCell {
-            cell.photoImageView.image = UIImage(named: photos[indexPath.row])
+            let photo = indexPath.section == 0 ? section1Photos[indexPath.row] : section2Photos[indexPath.row]
+            cell.photoImageView.image = UIImage(named: photo)
             
-            if indexPath.row == 0 {
-                cell.photoSectionLabel.text = "Section 1"
-                cell.photoSectionLabel.isHidden = false
-            } else if indexPath.row == 6 {
-                cell.photoSectionLabel.text = "Section 2"
-                cell.photoSectionLabel.isHidden = false
-            } else {
-                cell.photoSectionLabel.isHidden = true
-            }
+            cell.photoSectionLabel.isHidden = indexPath.row != 0
+            cell.photoSectionLabel.text = indexPath.section == 0 ? "Section 1" : "Section 2"
             return cell
         }
         return UICollectionViewCell()
     }
-    
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
+        return 2
+    }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         //print(indexPath.row)
-        let width = indexPath.row < 6 ? 188 : 92
-        let height = indexPath.row < 6 ? 150 : 120
+        let width = indexPath.section == 0 ? 188 : 92
+        let height = indexPath.section == 0 ? 150 : 120
         return CGSize(width: width, height: height)
     }
     
@@ -77,7 +69,11 @@ extension MorePhotoViewController: UICollectionViewDelegate, UICollectionViewDat
         
         let yesAction = UIAlertAction(title: "Yes", style: .destructive) {_ in
             //print(indexPath.row)
-            self.photos.remove(at: indexPath.row)
+            if indexPath.section == 0 {
+                self.section1Photos.remove(at: indexPath.row)
+            } else {
+                self.section2Photos.remove(at: indexPath.row)
+            }
             self.collectionView.reloadData()
         }
         

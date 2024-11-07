@@ -30,10 +30,6 @@ class HomeViewController: UIViewController {
         let nib = UINib(nibName: "TeacherCell", bundle: nil)
         tableView.register(nib, forCellReuseIdentifier: "TeacherCell")
     }
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        self.navigationItem.hidesBackButton = true
-    }
 }
 extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

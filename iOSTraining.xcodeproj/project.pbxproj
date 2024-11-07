@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4B05A98B2CDC624900B940EB /* CustomTabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B05A98A2CDC624900B940EB /* CustomTabbarController.swift */; };
+		4B05A9922CDC62AE00B940EB /* TextbookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B05A9902CDC62AE00B940EB /* TextbookViewController.swift */; };
+		4B05A9932CDC62AE00B940EB /* TextbookViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B05A9912CDC62AE00B940EB /* TextbookViewController.xib */; };
+		4B05A9972CDC630900B940EB /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B05A9952CDC630900B940EB /* SettingsViewController.swift */; };
+		4B05A9982CDC630900B940EB /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B05A9962CDC630900B940EB /* SettingsViewController.xib */; };
+		4B05A9992CDC702600B940EB /* TeacherProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4BA0006B2CDA08FD001E95D0 /* TeacherProfileViewController.xib */; };
+		4B05A99D2CDCB8BC00B940EB /* sample.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 4B05A99C2CDCB8BC00B940EB /* sample.mp4 */; };
 		4B12761C2CD896100035779C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B12761B2CD896100035779C /* AppDelegate.swift */; };
 		4B12761E2CD896100035779C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B12761D2CD896100035779C /* SceneDelegate.swift */; };
 		4B1276202CD896100035779C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B12761F2CD896100035779C /* LoginViewController.swift */; };
@@ -26,11 +33,16 @@
 		4BA000642CD9B825001E95D0 /* TeacherCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4BA000622CD9B825001E95D0 /* TeacherCell.xib */; };
 		4BA000672CD9C0CE001E95D0 /* Teacher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA000662CD9C0CE001E95D0 /* Teacher.swift */; };
 		4BA0006C2CDA08FD001E95D0 /* TeacherProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA0006A2CDA08FD001E95D0 /* TeacherProfileViewController.swift */; };
-		4BA0006D2CDA08FD001E95D0 /* TeacherProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4BA0006B2CDA08FD001E95D0 /* TeacherProfileViewController.xib */; };
 		4BA000722CDA1E3D001E95D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4BA000712CDA1E3D001E95D0 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4B05A98A2CDC624900B940EB /* CustomTabbarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabbarController.swift; sourceTree = "<group>"; };
+		4B05A9902CDC62AE00B940EB /* TextbookViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextbookViewController.swift; sourceTree = "<group>"; };
+		4B05A9912CDC62AE00B940EB /* TextbookViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextbookViewController.xib; sourceTree = "<group>"; };
+		4B05A9952CDC630900B940EB /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		4B05A9962CDC630900B940EB /* SettingsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingsViewController.xib; sourceTree = "<group>"; };
+		4B05A99C2CDCB8BC00B940EB /* sample.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = sample.mp4; sourceTree = "<group>"; };
 		4B1276182CD896100035779C /* iOSTraining.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSTraining.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B12761B2CD896100035779C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4B12761D2CD896100035779C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -67,6 +79,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4B05A9892CDC61E900B940EB /* Custom Tabbar */ = {
+			isa = PBXGroup;
+			children = (
+				4B05A98A2CDC624900B940EB /* CustomTabbarController.swift */,
+			);
+			path = "Custom Tabbar";
+			sourceTree = "<group>";
+		};
+		4B05A98D2CDC626300B940EB /* Textbook */ = {
+			isa = PBXGroup;
+			children = (
+				4B05A9902CDC62AE00B940EB /* TextbookViewController.swift */,
+				4B05A9912CDC62AE00B940EB /* TextbookViewController.xib */,
+			);
+			path = Textbook;
+			sourceTree = "<group>";
+		};
+		4B05A9942CDC62F200B940EB /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				4B05A9952CDC630900B940EB /* SettingsViewController.swift */,
+				4B05A9962CDC630900B940EB /* SettingsViewController.xib */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
 		4B12760F2CD896100035779C = {
 			isa = PBXGroup;
 			children = (
@@ -95,9 +133,13 @@
 				4BA000602CD9B568001E95D0 /* Home */,
 				4BA000652CD9B833001E95D0 /* Teacher Cell */,
 				4BA0006E2CDA0906001E95D0 /* TeacherProfile */,
+				4B05A9892CDC61E900B940EB /* Custom Tabbar */,
+				4B05A98D2CDC626300B940EB /* Textbook */,
+				4B05A9942CDC62F200B940EB /* Settings */,
 				4B1276212CD896100035779C /* Main.storyboard */,
 				4BA000662CD9C0CE001E95D0 /* Teacher.swift */,
 				4BA000712CDA1E3D001E95D0 /* Assets.xcassets */,
+				4B05A99C2CDCB8BC00B940EB /* sample.mp4 */,
 				4B1276262CD896120035779C /* LaunchScreen.storyboard */,
 				4B1276292CD896120035779C /* Info.plist */,
 			);
@@ -228,13 +270,16 @@
 			files = (
 				4B1276282CD896120035779C /* LaunchScreen.storyboard in Resources */,
 				4BA000642CD9B825001E95D0 /* TeacherCell.xib in Resources */,
-				4BA0006D2CDA08FD001E95D0 /* TeacherProfileViewController.xib in Resources */,
 				4B12766A2CD8AFDB0035779C /* SignUpViewController.xib in Resources */,
+				4B05A9932CDC62AE00B940EB /* TextbookViewController.xib in Resources */,
 				4B5B61762CDB060C00E8770F /* PhotoCell.xib in Resources */,
 				4B1276232CD896100035779C /* Main.storyboard in Resources */,
+				4B05A9982CDC630900B940EB /* SettingsViewController.xib in Resources */,
 				4B12766F2CD8C68D0035779C /* ForgotPasswordViewController.xib in Resources */,
 				4BA000722CDA1E3D001E95D0 /* Assets.xcassets in Resources */,
 				4BA0005F2CD9B557001E95D0 /* HomeViewController.xib in Resources */,
+				4B05A9992CDC702600B940EB /* TeacherProfileViewController.xib in Resources */,
+				4B05A99D2CDCB8BC00B940EB /* sample.mp4 in Resources */,
 				4B5B61712CDB04AE00E8770F /* MorePhotoViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -251,11 +296,14 @@
 				4B5B61702CDB04AE00E8770F /* MorePhotoViewController.swift in Sources */,
 				4BA0006C2CDA08FD001E95D0 /* TeacherProfileViewController.swift in Sources */,
 				4B12761C2CD896100035779C /* AppDelegate.swift in Sources */,
+				4B05A9922CDC62AE00B940EB /* TextbookViewController.swift in Sources */,
 				4B1276692CD8AFDB0035779C /* SignUpViewController.swift in Sources */,
 				4BA000672CD9C0CE001E95D0 /* Teacher.swift in Sources */,
 				4B12761E2CD896100035779C /* SceneDelegate.swift in Sources */,
+				4B05A9972CDC630900B940EB /* SettingsViewController.swift in Sources */,
 				4BA0005E2CD9B557001E95D0 /* HomeViewController.swift in Sources */,
 				4B5B61752CDB060C00E8770F /* PhotoCell.swift in Sources */,
+				4B05A98B2CDC624900B940EB /* CustomTabbarController.swift in Sources */,
 				4BA000632CD9B825001E95D0 /* TeacherCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
