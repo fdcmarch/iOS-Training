@@ -14,7 +14,11 @@
                 <outlet property="tab1Button" destination="8C8-Cz-5YO" id="hfB-nq-JY1"/>
                 <outlet property="tab2Button" destination="35Z-ge-Xog" id="rC6-gs-8fn"/>
                 <outlet property="tab3Button" destination="z63-QA-2u5" id="uDa-Wt-MZc"/>
-                <outlet property="teacherProfileImage" destination="ctM-Bg-ldH" id="8ZX-kB-BEF"/>
+                <outlet property="teacherAddressLabel" destination="SvD-6b-yeH" id="CSh-pY-a5M"/>
+                <outlet property="teacherNameLabel" destination="8vZ-4c-yV0" id="c7y-OW-KK0"/>
+                <outlet property="teacherProfileImage" destination="bvq-vE-oLU" id="XsU-Er-N0b"/>
+                <outlet property="teacherProfileVideo" destination="ctM-Bg-ldH" id="rLm-G0-8me"/>
+                <outlet property="teacherRatingLabel" destination="JS5-vR-BFn" id="EWp-0x-ID4"/>
                 <outlet property="textView" destination="QbU-am-TWf" id="qTT-BY-2Qi"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -53,21 +57,25 @@
                                                             </constraints>
                                                         </imageView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="John Doe" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8vZ-4c-yV0">
-                                                            <rect key="frame" x="94" y="19" width="80" height="20.333333333333329"/>
+                                                            <rect key="frame" x="94" y="19" width="120" height="20.333333333333329"/>
                                                             <constraints>
-                                                                <constraint firstAttribute="width" constant="80" id="hMb-Ca-83c"/>
+                                                                <constraint firstAttribute="width" constant="120" id="hMb-Ca-83c"/>
                                                             </constraints>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(Age:21)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2dt-JH-ZlL">
-                                                            <rect key="frame" x="183" y="19" width="160" height="20.333333333333329"/>
+                                                            <rect key="frame" x="223" y="0.0" width="120" height="58"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                     </subviews>
+                                                    <constraints>
+                                                        <constraint firstItem="2dt-JH-ZlL" firstAttribute="top" secondItem="uHk-Lv-xVn" secondAttribute="top" id="J3H-qq-Emh"/>
+                                                        <constraint firstAttribute="trailing" secondItem="2dt-JH-ZlL" secondAttribute="trailing" id="u0v-I8-WcI"/>
+                                                    </constraints>
                                                 </stackView>
                                                 <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ojn-ha-tHi">
                                                     <rect key="frame" x="315.33333333333331" y="1" width="47.666666666666686" height="76"/>
@@ -112,7 +120,7 @@
                                                             <rect key="frame" x="0.0" y="0.0" width="98" height="20.333333333333332"/>
                                                             <subviews>
                                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="map.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="xAm-RT-D5b">
-                                                                    <rect key="frame" x="0.0" y="1" width="21.333333333333332" height="18.333333333333332"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="21.333333333333332" height="20.333333333333332"/>
                                                                     <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 </imageView>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SvD-6b-yeH">
@@ -221,7 +229,7 @@
                                                     <color key="backgroundColor" red="1" green="0.23333518399206055" blue="0.52014048170581706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <state key="normal" title="Button"/>
-                                                    <buttonConfiguration key="configuration" style="plain" title="Start Lesson"/>
+                                                    <buttonConfiguration key="configuration" style="plain" title="Lesson Now"/>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fDu-OI-5Aa">
                                                     <rect key="frame" x="0.0" y="270" width="400" height="35"/>
@@ -229,7 +237,10 @@
                                                     <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <state key="normal" title="Button"/>
-                                                    <buttonConfiguration key="configuration" style="plain" title="Reservation Lesson"/>
+                                                    <buttonConfiguration key="configuration" style="plain" title="View More Photos"/>
+                                                    <connections>
+                                                        <action selector="didTapViewMore:" destination="-1" eventType="touchUpInside" id="7Un-sp-Hnl"/>
+                                                    </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QpG-yv-2XR">
                                                     <rect key="frame" x="39" y="321" width="21" height="22"/>
@@ -306,13 +317,13 @@
                                             </constraints>
                                         </view>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UTg-m7-3s8">
-                                            <rect key="frame" x="20" y="435" width="360" height="342"/>
+                                            <rect key="frame" x="8.6666666666666572" y="435" width="382.66666666666674" height="342"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="1RG-ke-lKz">
-                                                    <rect key="frame" x="0.0" y="14" width="360" height="34.333333333333336"/>
+                                                    <rect key="frame" x="0.0" y="14" width="382.66666666666669" height="34.333333333333336"/>
                                                     <subviews>
-                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8C8-Cz-5YO">
-                                                            <rect key="frame" x="0.0" y="0.0" width="106.66666666666667" height="34.333333333333336"/>
+                                                        <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8C8-Cz-5YO">
+                                                            <rect key="frame" x="0.0" y="0.0" width="114.33333333333333" height="34.333333333333336"/>
                                                             <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <state key="normal" title="Button"/>
                                                             <buttonConfiguration key="configuration" style="plain" title="Tab 1"/>
@@ -321,7 +332,7 @@
                                                             </connections>
                                                         </button>
                                                         <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="35Z-ge-Xog">
-                                                            <rect key="frame" x="126.66666666666666" y="0.0" width="106.66666666666666" height="34.333333333333336"/>
+                                                            <rect key="frame" x="134.33333333333334" y="0.0" width="114" height="34.333333333333336"/>
                                                             <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <state key="normal" title="Button"/>
                                                             <buttonConfiguration key="configuration" style="plain" title="Tab 2"/>
@@ -330,7 +341,7 @@
                                                             </connections>
                                                         </button>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z63-QA-2u5">
-                                                            <rect key="frame" x="253.33333333333329" y="0.0" width="106.66666666666666" height="34.333333333333336"/>
+                                                            <rect key="frame" x="268.33333333333331" y="0.0" width="114.33333333333331" height="34.333333333333336"/>
                                                             <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <state key="normal" title="Button"/>
                                                             <buttonConfiguration key="configuration" style="plain" title="Tab 3"/>
@@ -342,10 +353,10 @@
                                                     <color key="backgroundColor" systemColor="systemGray6Color"/>
                                                 </stackView>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vlm-3g-dAw">
-                                                    <rect key="frame" x="8" y="63" width="344" height="248"/>
+                                                    <rect key="frame" x="8" y="63" width="366.66666666666669" height="248"/>
                                                     <subviews>
-                                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="This is content for Tab 1. You can add more detailed information here." translatesAutoresizingMaskIntoConstraints="NO" id="QbU-am-TWf">
-                                                            <rect key="frame" x="10" y="10" width="324" height="228"/>
+                                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" editable="NO" text="This is content for Tab 1. You can add more detailed information here." selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QbU-am-TWf">
+                                                            <rect key="frame" x="10" y="10" width="346.66666666666669" height="228"/>
                                                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                             <color key="textColor" systemColor="labelColor"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -381,6 +392,7 @@
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             <constraints>
                                 <constraint firstAttribute="bottom" secondItem="ktd-zu-oxh" secondAttribute="bottom" id="IK2-ht-fbi"/>
+                                <constraint firstAttribute="height" constant="777" id="hsU-Qv-ER5"/>
                                 <constraint firstItem="ktd-zu-oxh" firstAttribute="top" secondItem="RD3-p8-iyJ" secondAttribute="top" id="mTy-Gn-KYx"/>
                                 <constraint firstAttribute="trailing" secondItem="ktd-zu-oxh" secondAttribute="trailing" id="yne-fN-3pj"/>
                                 <constraint firstItem="ktd-zu-oxh" firstAttribute="leading" secondItem="RD3-p8-iyJ" secondAttribute="leading" id="ytG-YS-7Ow"/>

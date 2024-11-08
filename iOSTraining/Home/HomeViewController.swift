@@ -10,7 +10,7 @@ import UIKit
 class HomeViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
-    
+    private var productResponse: ProductResponse?
     private let teachers : [Teacher] = [
         Teacher(imageName: "chung", name: "Chung Myung", status: "0", address: "Luzon", rating: "5.00", lesson: "500", coin: "500", flag: "phil", country: "Pilipinas", tag: ["buotan", "mabait"], imageGallery: ["panda", "taylor", "chung", "maja", "taylor", "panda", "sjw", "mikha", "taylor", "chung", "panda", "taylor", "chung", "maja", "sjw", "mikha", "taylor", "chung"]),
             Teacher(imageName: "mikha", name: "Mikha", status: "1", address: "Visayas", rating: "4.00", lesson: "700", coin: "500", flag: "phil", country: "Pilipinas", tag: ["buotan", "mabait"], imageGallery: ["panda", "maja", "panda", "maja", "panda", "maja", "panda", "maja", "panda", "maja", "panda", "maja", "panda", "maja"]),
@@ -29,7 +29,26 @@ class HomeViewController: UIViewController {
         // Do any additional setup after loading the view.
         let nib = UINib(nibName: "TeacherCell", bundle: nil)
         tableView.register(nib, forCellReuseIdentifier: "TeacherCell")
+        fetchAllProducts()
     }
+    func fetchAllProducts() {
+//        NetworkManager.shared.get {
+//            print("Done fetching")
+//        }
+        NetworkManager.shared.getAllProductsNativeWay {products in
+//            print("Done")
+            guard let products else { return }
+            
+            self.productResponse = products
+            
+            if let product = self.productResponse?.products.first {
+                print(product.title)
+            }
+            //print(self.productResponse? .products.first)
+        }
+    }
+    
+    
 }
 extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

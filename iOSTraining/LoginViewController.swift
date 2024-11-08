@@ -11,6 +11,8 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var signUpBtn: UIButton!
     @IBOutlet weak var signInBtn: UIButton!
+    private var name = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Login"
@@ -18,6 +20,20 @@ class ViewController: UIViewController {
         signUpBtn.layer.borderWidth = 1
         signUpBtn.layer.borderColor = UIColor.purple.cgColor
         signInBtn.layer.cornerRadius = 12
+        
+//        UserDefaults.standard.setValue("Test", forKey: "name")
+//        
+//        if let name = UserDefaults.standard.value(forKey: "name") as? String {
+//            self.name = name
+//        }
+//        
+//        guard let name = UserDefaults.standard.value(forKey: "name") as? String else {
+//            return
+//        }
+//        
+//        self.name = (UserDefaults.standard.value(forKey: "name") as? String) ?? ""
+//        
+//        UserDefaults.standard.string(forKey: "name")
     }
 
     @IBAction func rememberMe_Tapped(_ sender:UIButton){

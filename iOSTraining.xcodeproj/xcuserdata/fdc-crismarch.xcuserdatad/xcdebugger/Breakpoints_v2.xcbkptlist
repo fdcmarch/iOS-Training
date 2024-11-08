@@ -3,4 +3,204 @@
    uuid = "D3C5CB05-22AA-4FF5-B783-889EC6141D20"
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5D75C2E7-5A60-4097-810E-13784598502A"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "iOSTraining/TeacherProfile/TeacherProfileViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
+            landmarkName = "TeacherProfileViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "5D75C2E7-5A60-4097-810E-13784598502A - 291e70327597c82a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "iOSTraining.TeacherProfileViewController.containerView.getter : Swift.Optional&lt;__C.UIView&gt;"
+                  moduleName = "iOSTraining"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/fdc-crismarch/Projects/iOSTraining/iOSTraining/TeacherProfile/TeacherProfileViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  uuid = "5D75C2E7-5A60-4097-810E-13784598502A - f581ad3d4022505e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "iOSTraining.TeacherProfileViewController.containerView.setter : Swift.Optional&lt;__C.UIView&gt;"
+                  moduleName = "iOSTraining"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/fdc-crismarch/Projects/iOSTraining/iOSTraining/TeacherProfile/TeacherProfileViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "24">
+               </Location>
+               <Location
+                  uuid = "5D75C2E7-5A60-4097-810E-13784598502A - 4bc5cc3b6a6c4092"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "iOSTraining.TeacherProfileViewController.containerView.modify : Swift.Optional&lt;__C.UIView&gt;"
+                  moduleName = "iOSTraining"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/fdc-crismarch/Projects/iOSTraining/iOSTraining/TeacherProfile/TeacherProfileViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "5D75C2E7-5A60-4097-810E-13784598502A - 810ddb74dc8d1bdd"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "iOSTraining.TeacherProfileViewController.containerView.modify : Swift.Optional&lt;__C.UIView&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "iOSTraining"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/fdc-crismarch/Projects/iOSTraining/%3Ccompiler-generated%3E"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "28">
+               </Location>
+               <Location
+                  uuid = "5D75C2E7-5A60-4097-810E-13784598502A - ada86faeee76fae9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "iOSTraining.TeacherProfileViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; iOSTraining.TeacherProfileViewController"
+                  moduleName = "iOSTraining"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/fdc-crismarch/Projects/iOSTraining/iOSTraining/TeacherProfile/TeacherProfileViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "512">
+               </Location>
+               <Location
+                  uuid = "5D75C2E7-5A60-4097-810E-13784598502A - ac3cacd541be4617"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "iOSTraining.TeacherProfileViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;iOSTraining.TeacherProfileViewController&gt;"
+                  moduleName = "iOSTraining"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/fdc-crismarch/Projects/iOSTraining/iOSTraining/TeacherProfile/TeacherProfileViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "488">
+               </Location>
+               <Location
+                  uuid = "5D75C2E7-5A60-4097-810E-13784598502A - 79c013974ad45d81"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "iOSTraining.TeacherProfileViewController.teacherRatingLabel.getter : Swift.Optional&lt;__C.UILabel&gt;"
+                  moduleName = "iOSTraining"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/fdc-crismarch/Projects/iOSTraining/iOSTraining/TeacherProfile/TeacherProfileViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  uuid = "5D75C2E7-5A60-4097-810E-13784598502A - 7366c50d1ae115b9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "iOSTraining.TeacherProfileViewController.teacherRatingLabel.setter : Swift.Optional&lt;__C.UILabel&gt;"
+                  moduleName = "iOSTraining"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/fdc-crismarch/Projects/iOSTraining/iOSTraining/TeacherProfile/TeacherProfileViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "24">
+               </Location>
+               <Location
+                  uuid = "5D75C2E7-5A60-4097-810E-13784598502A - e517674073591138"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "iOSTraining.TeacherProfileViewController.teacherRatingLabel.modify : Swift.Optional&lt;__C.UILabel&gt;"
+                  moduleName = "iOSTraining"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/fdc-crismarch/Projects/iOSTraining/iOSTraining/TeacherProfile/TeacherProfileViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "5D75C2E7-5A60-4097-810E-13784598502A - 8bad10c62e2a130"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "iOSTraining.TeacherProfileViewController.teacherRatingLabel.modify : Swift.Optional&lt;__C.UILabel&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "iOSTraining"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/fdc-crismarch/Projects/iOSTraining/%3Ccompiler-generated%3E"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "28">
+               </Location>
+               <Location
+                  uuid = "5D75C2E7-5A60-4097-810E-13784598502A - ada86faeee76fae9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "iOSTraining.TeacherProfileViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; iOSTraining.TeacherProfileViewController"
+                  moduleName = "iOSTraining"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/fdc-crismarch/Projects/iOSTraining/iOSTraining/TeacherProfile/TeacherProfileViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "520">
+               </Location>
+               <Location
+                  uuid = "5D75C2E7-5A60-4097-810E-13784598502A - ac3cacd541be4617"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "iOSTraining.TeacherProfileViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;iOSTraining.TeacherProfileViewController&gt;"
+                  moduleName = "iOSTraining"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/fdc-crismarch/Projects/iOSTraining/iOSTraining/TeacherProfile/TeacherProfileViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "496">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

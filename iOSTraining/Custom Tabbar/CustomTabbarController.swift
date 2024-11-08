@@ -22,17 +22,21 @@ class CustomTabBarController: UITabBarController {
   }
   private func configureViewControllers() {
     let vc1 = HomeViewController()
-    let vc2 = TextbookViewController()
-    let vc3 = SettingsViewController()
+    let vc2 = ProductViewController()
+    let vc3 = TextbookViewController()
+    let vc4 = SettingsViewController()
+      
     // Set titles and images for each tab
     vc1.tabBarItem = UITabBarItem(title: "Home", image: UIImage(systemName: "house"), tag: 0)
-    vc2.tabBarItem = UITabBarItem(title: "Textbook", image: UIImage(systemName: "book.pages.fill"), tag: 1)
-    vc3.tabBarItem = UITabBarItem(title: "Settings", image: UIImage(systemName: "gear"), tag: 2)
+    vc2.tabBarItem = UITabBarItem(title: "Products", image: UIImage(systemName: "shippingbox"), tag: 0)
+    vc3.tabBarItem = UITabBarItem(title: "Textbook", image: UIImage(systemName: "book.pages.fill"), tag: 1)
+    vc4.tabBarItem = UITabBarItem(title: "Settings", image: UIImage(systemName: "gear"), tag: 2)
     // Embed each view controller in a UINavigationController (optional)
     let nav1 = UINavigationController(rootViewController: vc1)
     let nav2 = UINavigationController(rootViewController: vc2)
     let nav3 = UINavigationController(rootViewController: vc3)
+    let nav4 = UINavigationController(rootViewController: vc4)
     // Add the view controllers to the tab bar controller
-    viewControllers = [nav1, nav2, nav3]
+    viewControllers = [nav1, nav2, nav3, nav4]
   }
 }

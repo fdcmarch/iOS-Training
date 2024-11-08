@@ -17,7 +17,7 @@
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="panda" translatesAutoresizingMaskIntoConstraints="NO" id="kTb-go-C9g">
-                        <rect key="frame" x="10" y="10" width="260" height="222"/>
+                        <rect key="frame" x="10" y="12.666666666666671" width="260" height="219.33333333333331"/>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Section" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SBb-do-VWS">
                         <rect key="frame" x="11" y="-6" width="127" height="21"/>
@@ -32,7 +32,7 @@
             <constraints>
                 <constraint firstItem="kTb-go-C9g" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="2pt-Hh-gea"/>
                 <constraint firstAttribute="trailing" secondItem="kTb-go-C9g" secondAttribute="trailing" constant="10" id="LNp-j4-a4f"/>
-                <constraint firstItem="kTb-go-C9g" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="duW-Oq-wBM"/>
+                <constraint firstItem="kTb-go-C9g" firstAttribute="top" relation="greaterThanOrEqual" secondItem="gTV-IL-0wX" secondAttribute="top" constant="12.5" id="duW-Oq-wBM"/>
                 <constraint firstAttribute="bottom" secondItem="kTb-go-C9g" secondAttribute="bottom" constant="10" id="zMc-yX-kCv"/>
             </constraints>
             <size key="customSize" width="280" height="242"/>
